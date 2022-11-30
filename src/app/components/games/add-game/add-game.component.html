@@ -1,0 +1,28 @@
+<div class="container my-5">
+  <h1 class="mb-3">Add New Game</h1>
+
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="addGame()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)]="addGameRequest.name">
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <input type="text" class="form-control" id="description" name="description" [(ngModel)]="addGameRequest.description">
+        </div>
+        <div class="mb-3">
+          <label for="platform" class="form-label">Platform</label>
+          <input type="text" class="form-control" id="platform" name="platform" [(ngModel)]="addGameRequest.platform">
+        </div>
+        <div class="mb-3">
+          <label for="img" class="form-label">ImgUrl</label>
+          <input type="text" class="form-control" id="img" name="img" [(ngModel)]="addGameRequest.img">
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+
+</div>
