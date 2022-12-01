@@ -15,7 +15,7 @@ export class EditGameComponent implements OnInit {
     name: '',
     description: '',
     platform: '',
-    img: ''
+    imgurl: ''
   };
 
   constructor(private route: ActivatedRoute, private gameService: GamesService, private router: Router) {}

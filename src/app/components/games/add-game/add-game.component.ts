@@ -15,7 +15,7 @@ export class AddGameComponent implements OnInit {
     name: '',
     description: '',
     platform: '',
-    img: ''
+    imgurl: ''
   }
   constructor(private gameService: GamesService, private router: Router) { }
 

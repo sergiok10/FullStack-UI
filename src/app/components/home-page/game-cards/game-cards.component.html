@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row" *ngIf="games && games.length > 0">
+      <div class="col-4" *ngFor="let game of games">
+          <div class="card" style="width: 18rem;">
+              <img src={{game.imgurl}}
+                  class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">{{ game.name }}</h5>
+                  <p class="card-text">{{game.platform}}</p>
+                  <p class="card-text">{{ game.description }}</p>
+              </div>
+              <div class="card-body">
+                  <a asp-controller="Hotel" asp-action="GetOneHotel" asp-route-id="@hotel.Id" class="btn btn-primary">View</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
